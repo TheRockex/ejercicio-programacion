@@ -34,11 +34,3 @@
 00000012;Carmen;García,Fernández;01/01/1973;Barcelona
 #Hospital Clínico;Oncología;Dr. José López Martínez;20/02/2023;12:00
 #Hospital Clínico;Oncología;Dr. José López Martínez;07/03/2023;13:15
-
-
-
-
-
-
-
-

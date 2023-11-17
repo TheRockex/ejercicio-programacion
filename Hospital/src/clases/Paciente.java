@@ -9,15 +9,13 @@ public class Paciente {
 	private String naicimento;
 	private String localidad;
 	private ArrayList<CitaMedica> listaCitas;
-	
-	public Paciente(int id, String nombre, String[] apellidos, String naicimento, String localidad,
-			ArrayList<CitaMedica> listaCitas) {
+
+	public Paciente(int id, String nombre, String[] apellidos, String naicimento, String localidad) {
 		this.id = id;
 		this.nombre = nombre;
 		this.apellidos = apellidos;
 		this.naicimento = naicimento;
 		this.localidad = localidad;
-		this.listaCitas = listaCitas;
 	}
 
 	public int getId() {

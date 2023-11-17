@@ -26,16 +26,18 @@ public class HiloLectura extends Thread {
 			fr = new FileReader(archivo);
 			br = new BufferedReader(fr);
 			String linea;
-			Paciente p;
+			ArrayList<CitaMedica> listaCitas=new ArrayList<CitaMedica>();
 
 			while ((linea = br.readLine()) != null) {
 				String[] s = linea.split(";");
 				try {
-					p = new Paciente(Integer.parseInt(s[0]), s[1], new String[] { s[2], s[3] }, s[4], s[5]);
+				 listaPacientes.add(new Paciente(Integer.parseInt(s[0]), s[1], new String[] { s[2], s[3] }, s[4], s[5]))  ;
+					
+					
 				} catch (NumberFormatException e) {
 					
 					CitaMedica cita = new CitaMedica(s[0], s[1], s[2], s[3], s[4]);
-					
+					listaCitas.add(cita);
 				}
 			}
 

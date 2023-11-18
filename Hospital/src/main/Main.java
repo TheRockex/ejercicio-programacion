@@ -8,9 +8,10 @@ public class Main {
 
 	public static void main(String[] args) {
 		ListaPacientes listaPacientes = new ListaPacientes();
-		File archivo = new File("pacientes.txt"); // Introduce aquí la ruta del archivo a leer
-		
+		File archivo = new File("pacientes.txt"); // Indica aquí la ruta del archivo a leer
+
 		HiloLectura lectura = new HiloLectura(listaPacientes, archivo);
 		lectura.start();
+		System.out.println("hola");
 	}
 }

@@ -56,23 +56,12 @@ public class HiloLectura extends Thread {
 							LocalDate.of(Integer.parseInt(d[2]), Integer.parseInt(d[1]), Integer.parseInt(d[0])), s[5]);
 
 				}
-
-				/*
-				 * try { String[] d = s[4].split("/"); // Date nacimiento
-				 * 
-				 * listaPacientes.add(new Paciente(Integer.parseInt(s[0]), s[1], new String[] {
-				 * s[2], s[3] }, LocalDate.of(Integer.parseInt(d[2]), Integer.parseInt(d[1]),
-				 * Integer.parseInt(d[0])), s[5]));
-				 * 
-				 * } catch (NumberFormatException e) { String[] d = s[3].split("/"); // Date
-				 * fecha
-				 * 
-				 * CitaMedica cita = new CitaMedica(s[0], s[1], s[2], s[3], s[4]);
-				 * listaCitas.add(cita); }
-				 */
 			}
 			
-			listaPacientes.add(p);
+			if(p!=null) {
+				listaPacientes.add(p);
+			}
+			
 
 			System.out.println("Hola");
 

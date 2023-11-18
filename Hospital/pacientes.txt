@@ -1,36 +1,36 @@
-00000001;Alvaro;Ruiz,Moreno;20/01/1970;Madrid
+00000001;Alvaro;Ruiz;Moreno;20/01/1970;Madrid
 #Hospital VeraCruz;Dermatología;Dra. María Lozano Robles;15/05/2023;8:45
 #Hospital VeraCruz;Dermatología;Dra. María Lozano Robles;20/06/2023;9:00
-00000002;Elena;García,Martínez;03/07/1985;Barcelona
+00000002;Elena;García;Martínez;03/07/1985;Barcelona
 #Clínica San Pablo;Ginecología;Dr. Javier Sánchez Mendoza;10/09/2023;14:30
 #Clínica San Pablo;Ginecología;Dr. Javier Sánchez Mendoza;05/10/2023;15:15
-00000003;Carlos;Sánchez,Jiménez;12/03/1982;Sevilla
+00000003;Carlos;Sánchez;Jiménez;12/03/1982;Sevilla
 #Hospital Central;Cardiología;Dr. Laura González Herrera;05/08/2023;10:00
 #Hospital Central;Cardiología;Dr. Laura González Herrera;18/09/2023;11:30
-00000004;Ana;López,Pérez;25/06/1990;Valencia
+00000004;Ana;López;Pérez;25/06/1990;Valencia
 #Clínica Santa María;Oftalmología;Dr. Antonio Rodríguez López;02/11/2023;14:15
 #Clínica Santa María;Oftalmología;Dr. Antonio Rodríguez López;20/11/2023;15:45
-00000005;David;Martínez,Ruiz;08/09/1978;Barcelona
+00000005;David;Martínez;Ruiz;08/09/1978;Barcelona
 #Hospital Santander;Neurología;Dra. Isabel Fernández García;12/04/2023;9:30
 #Hospital Santander;Neurología;Dra. Isabel Fernández García;28/04/2023;10:45
-00000006;María;Fernández,Santos;17/11/1989;Madrid
+00000006;María;Fernández;Santos;17/11/1989;Madrid
 #Clínica La Esperanza;Pediatría;Dr. Javier Ramírez Soto;08/07/2023;13:00
 #Clínica La Esperanza;Pediatría;Dr. Javier Ramírez Soto;22/07/2023;14:30
-00000007;Roberto;Gómez,Rodríguez;04/02/1975;Bilbao
+00000007;Roberto;Gómez;Rodríguez;04/02/1975;Bilbao
 #Hospital Universitario;Endocrinología;Dra. Marta Díaz Vargas;30/09/2023;11:00
 #Hospital Universitario;Endocrinología;Dra. Marta Díaz Vargas;15/10/2023;12:15
-00000008;Laura;Rodríguez,Martínez;21/06/1987;Valencia
+00000008;Laura;Rodríguez;Martínez;21/06/1987;Valencia
 #Clínica San Francisco;Psicología;Lic. Adrián Pérez Silva;17/06/2023;16:45
 #Clínica San Francisco;Psicología;Lic. Adrián Pérez Silva;02/07/2023;18:00
-00000009;Javier;Gutiérrez,López;09/12/1980;Sevilla
+00000009;Javier;Gutiérrez;López;09/12/1980;Sevilla
 #Hospital San Martín;Ortopedia;Dr. Juan Morales Castro;22/03/2023;15:30
 #Hospital San Martín;Ortopedia;Dr. Juan Morales Castro;06/04/2023;16:45
-00000010;Marta;Hernández,Gómez;14/05/1995;Barcelona
+00000010;Marta;Hernández;Gómez;14/05/1995;Barcelona
 #Centro Médico Salud y Vida;Dietética;Nutricionista Ana Torres;03/12/2023;10:30
 #Centro Médico Salud y Vida;Dietética;Nutricionista Ana Torres;18/12/2023;11:45
-00000011;Raúl;Fuentes,Sánchez;28/08/1984;Madrid
+00000011;Raúl;Fuentes;Sánchez;28/08/1984;Madrid
 #Clínica Dental Sonrisas;Odontología;Dr. Carmen Molina Ruiz;14/06/2023;13:45
 #Clínica Dental Sonrisas;Odontología;Dr. Carmen Molina Ruiz;29/06/2023;15:00
-00000012;Carmen;García,Fernández;01/01/1973;Barcelona
+00000012;Carmen;García;Fernández;01/01/1973;Barcelona
 #Hospital Clínico;Oncología;Dr. José López Martínez;20/02/2023;12:00
 #Hospital Clínico;Oncología;Dr. José López Martínez;07/03/2023;13:15

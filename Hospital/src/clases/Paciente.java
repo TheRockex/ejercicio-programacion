@@ -1,21 +1,23 @@
 package clases;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Paciente {
 	private int id;
 	private String nombre;
 	private String[] apellidos;
-	private String naicimento;
+	private LocalDate nacimento;
 	private String localidad;
 	private ArrayList<CitaMedica> listaCitas;
 
-	public Paciente(int id, String nombre, String[] apellidos, String naicimento, String localidad) {
+	public Paciente(int id, String nombre, String[] apellidos, LocalDate nacimento, String localidad) {
 		this.id = id;
 		this.nombre = nombre;
 		this.apellidos = apellidos;
-		this.naicimento = naicimento;
+		this.nacimento = nacimento;
 		this.localidad = localidad;
+		listaCitas = new ArrayList<CitaMedica>();
 	}
 
 	public int getId() {
@@ -42,12 +44,12 @@ public class Paciente {
 		this.apellidos = apellidos;
 	}
 
-	public String getNaicimento() {
-		return naicimento;
+	public LocalDate getNacimento() {
+		return nacimento;
 	}
 
-	public void setNaicimento(String naicimento) {
-		this.naicimento = naicimento;
+	public void setNaicimento(LocalDate nacimento) {
+		this.nacimento = nacimento;
 	}
 
 	public String getLocalidad() {

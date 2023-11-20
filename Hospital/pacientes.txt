@@ -16,7 +16,7 @@
 00000006;María;Fernández;Santos;17/11/1989;Madrid
 #Clínica La Esperanza;Pediatría;Dr. Javier Ramírez Soto;08/07/2023;13:00
 #Clínica La Esperanza;Pediatría;Dr. Javier Ramírez Soto;22/07/2023;14:30
-00000007;Roberto;Gómez;Rodríguez;04/02/1975;Bilbao
+0000007;Roberto;Gómez;Rodríguez;04/02/1975;Bilbao
 #Hospital Universitario;Endocrinología;Dra. Marta Díaz Vargas;30/09/2023;11:00
 #Hospital Universitario;Endocrinología;Dra. Marta Díaz Vargas;15/10/2023;12:15
 00000008;Laura;Rodríguez;Martínez;21/06/1987;Valencia
@@ -28,7 +28,7 @@
 00000010;Marta;Hernández;Gómez;14/05/1995;Barcelona
 #Centro Médico Salud y Vida;Dietética;Nutricionista Ana Torres;03/12/2023;10:30
 #Centro Médico Salud y Vida;Dietética;Nutricionista Ana Torres;18/12/2023;11:45
-00000011;Raúl;Fuentes;Sánchez;28/08/1984;Madrid
+0000001100000;Raúl;Fuentes;Sánchez;28/08/1984;Madrid
 #Clínica Dental Sonrisas;Odontología;Dr. Carmen Molina Ruiz;14/06/2023;13:45
 #Clínica Dental Sonrisas;Odontología;Dr. Carmen Molina Ruiz;29/06/2023;15:00
 00000012;Carmen;García;Fernández;01/01/1973;Barcelona

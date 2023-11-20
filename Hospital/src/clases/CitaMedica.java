@@ -1,13 +1,16 @@
 package clases;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
+
 public class CitaMedica {
 	private String centro;
 	private String especialidad;
 	private String doctor;
-	private String fecha;
-	private String hora;
+	private LocalDate fecha;
+	private LocalTime hora;
 	
-	public CitaMedica(String centro, String especialidad, String doctor, String fecha, String hora) {
+	public CitaMedica(String centro, String especialidad, String doctor, LocalDate fecha, LocalTime hora) {
 		this.centro = centro;
 		this.especialidad = especialidad;
 		this.doctor = doctor;
@@ -39,19 +42,19 @@ public class CitaMedica {
 		this.doctor = doctor;
 	}
 
-	public String getFecha() {
+	public LocalDate getFecha() {
 		return fecha;
 	}
 
-	public void setFecha(String fecha) {
+	public void setFecha(LocalDate fecha) {
 		this.fecha = fecha;
 	}
 
-	public String getHora() {
+	public LocalTime getHora() {
 		return hora;
 	}
 
-	public void setHora(String hora) {
+	public void setHora(LocalTime hora) {
 		this.hora = hora;
 	}
 }

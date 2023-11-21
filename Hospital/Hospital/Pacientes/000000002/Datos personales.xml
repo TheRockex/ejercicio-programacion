@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pacientes>
    <paciente>
-      <paciente id=12>
-         <nombre>Carmen</nombre>
+      <paciente id="000000002">
+         <nombre>Elena</nombre>
          <apellidos>
             <apellido>García</apellido>
-            <apellido>Fernández</apellido>
+            <apellido>Martínez</apellido>
          </apellidos>
-         <nacimiento>1973-01-01</nacimiento>
+         <nacimiento>1985-07-03</nacimiento>
          <localidad>Barcelona</localidad>
    </paciente>
 </pacientes>

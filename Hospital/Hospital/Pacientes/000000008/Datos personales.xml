@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pacientes>
    <paciente>
-      <paciente id=8>
+      <paciente id="000000008">
          <nombre>Laura</nombre>
          <apellidos>
             <apellido>Rodríguez</apellido>

@@ -128,10 +128,9 @@ public class ListaPacientes {
 		PrintWriter pw;
 
 		for (int i = 0; i < listaPacientes.size(); i++) {
-			File carpetaPacientesID = new File("Hospital/Pacientes/" + listaPacientes.get(i).getId());
-			File file1 = new File("Hospital/Pacientes/" + listaPacientes.get(i).getId() + "/Datos personales.xml");
-			File file2 = new File("Hospital/Pacientes/" + listaPacientes.get(i).getId() + "/Citas.xml");
-
+			File carpetaPacientesID = new File("Hospital/Pacientes/" + String.format("%09d", listaPacientes.get(i).getId()));
+			File file1 = new File("Hospital/Pacientes/" + String.format("%09d", listaPacientes.get(i).getId())  + "/Datos personales.xml");
+			File file2 = new File("Hospital/Pacientes/" + String.format("%09d", listaPacientes.get(i).getId()) + "/Citas.xml");
 			try {
 				carpetaPacientesID.mkdir();
 				file1.createNewFile();
@@ -140,7 +139,7 @@ public class ListaPacientes {
 				pw.println("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
 				pw.println("<pacientes>");
 				pw.println("   <paciente>");
-				pw.println("      <paciente id=" + listaPacientes.get(i).getId() + ">");
+				pw.println("      <paciente id=\"" + String.format("%09d", listaPacientes.get(i).getId()) + "\">");
 				pw.println("         <nombre>" + listaPacientes.get(i).getNombre() + "</nombre>");
 				pw.println("         <apellidos>");
 				pw.println("            <apellido>" + listaPacientes.get(i).getApellidos()[0] + "</apellido>");
@@ -172,8 +171,7 @@ public class ListaPacientes {
 					pw.println("   </cita>");
 					if(x == listaPacientes.get(i).getListaCitas().size()) {
 						pw.println("</citas>");
-					}
-					
+					}		
 				}
 				pw.flush();
 				pw.close();

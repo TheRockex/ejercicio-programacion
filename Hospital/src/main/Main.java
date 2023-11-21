@@ -23,8 +23,10 @@ public class Main {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		ListaPacientes listaPacientes = new ListaPacientes();
+		File pacientes = new File("Pacientes");
 		File archivo = new File("pacientes.txt"); // Introduce aquí la ruta del archivo a leer
 
+		pacientes.mkdir();
 		HiloLectura lectura = new HiloLectura(listaPacientes, archivo);
 		HiloCreador creador = new HiloCreador(listaPacientes);
 		lectura.start();
@@ -50,7 +52,7 @@ public class Main {
 		NodeList nodeList;
 		try {
 			db = dbf.newDocumentBuilder();
-			file = new File("Hospital/Pacientes/" + paciente + "/Datos personales.xml");
+			file = new File("Pacientes/" + paciente + "/Datos personales.xml");
 			document = db.parse(file);
 			document.normalizeDocument();
 			xPath = XPathFactory.newInstance().newXPath();
@@ -66,11 +68,9 @@ public class Main {
 						.println("Nacimiento: " + elemento.getElementsByTagName("nacimiento").item(0).getTextContent());
 				System.out.println("Localidad: " + elemento.getElementsByTagName("localidad").item(0).getTextContent());
 			}
-			db = dbf.newDocumentBuilder();
-			file = new File("Hospital/Pacientes/" + paciente + "/Citas.xml");
+			file = new File("Pacientes/" + paciente + "/Citas.xml");
 			document = db.parse(file);
 			document.normalizeDocument();
-			xPath = XPathFactory.newInstance().newXPath();
 			path = "//cita";
 			nodeList = (NodeList) xPath.compile(path).evaluate(document, XPathConstants.NODESET);
 			System.out.println("Citas: ");
@@ -82,9 +82,8 @@ public class Main {
 				System.out.print(". " + elemento.getElementsByTagName("fecha").item(0).getTextContent());
 				System.out.println(". " + elemento.getElementsByTagName("hora").item(0).getTextContent());
 			}
-			
 		} catch (Exception o) {
-			System.err.println("exception");
+			System.err.println("Exception");
 
 		}
 	}

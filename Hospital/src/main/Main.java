@@ -13,8 +13,6 @@ import javax.xml.xpath.XPathFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
-
-import clases.Paciente;
 import hilos.HiloCreador;
 import hilos.HiloLectura;
 import shared.ListaPacientes;
@@ -30,6 +28,7 @@ public class Main {
 		HiloLectura lectura = new HiloLectura(listaPacientes, archivo);
 		HiloCreador creador = new HiloCreador(listaPacientes);
 		lectura.start();
+		
 		creador.start();
 
 		try {
@@ -38,8 +37,6 @@ public class Main {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-
-		System.out.println("Hola");
 
 		System.out.println("Introduzca ID del paciente: ");
 		String paciente = sc.nextLine();

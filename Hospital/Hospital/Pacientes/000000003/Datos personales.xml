@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pacientes>
-   <paciente>
       <paciente id="000000003">
          <nombre>Carlos</nombre>
          <apellidos>
@@ -9,5 +8,5 @@
          </apellidos>
          <nacimiento>1982-03-12</nacimiento>
          <localidad>Sevilla</localidad>
-   </paciente>
+      </paciente>
 </pacientes>

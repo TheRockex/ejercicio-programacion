@@ -138,7 +138,6 @@ public class ListaPacientes {
 				pw = new PrintWriter(fw);
 				pw.println("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
 				pw.println("<pacientes>");
-				pw.println("   <paciente>");
 				pw.println("      <paciente id=\"" + String.format("%09d", listaPacientes.get(i).getId()) + "\">");
 				pw.println("         <nombre>" + listaPacientes.get(i).getNombre() + "</nombre>");
 				pw.println("         <apellidos>");
@@ -147,7 +146,7 @@ public class ListaPacientes {
 				pw.println("         </apellidos>");
 				pw.println("         <nacimiento>" + listaPacientes.get(i).getNacimento() + "</nacimiento>");
 				pw.println("         <localidad>" + listaPacientes.get(i).getLocalidad() + "</localidad>");
-				pw.println("   </paciente>");
+				pw.println("      </paciente>");
 				pw.println("</pacientes>");
 				pw.flush();
 				pw.close();
@@ -169,7 +168,7 @@ public class ListaPacientes {
 					pw.println("      <fecha>" + listaPacientes.get(i).getListaCitas().get(x).getFecha() + "</fecha>");
 					pw.println("      <hora>" + listaPacientes.get(i).getListaCitas().get(x).getHora() + "</hora>");
 					pw.println("   </cita>");
-					if(x == listaPacientes.get(i).getListaCitas().size()-1) {
+					if(x == listaPacientes.get(i).getListaCitas().size() - 1) {
 						pw.println("</citas>");
 					}		
 				}

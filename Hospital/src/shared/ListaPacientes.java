@@ -162,14 +162,14 @@ public class ListaPacientes {
 						pw.println("<citas>");
 					}
 					pw.println("   <cita>");
-					pw.println("      <centro>" + listaPacientes.get(i).getListaCitas().get(0).getCentro() + "</centro>");
-					pw.println("      <especialidad>" + listaPacientes.get(i).getListaCitas().get(0).getEspecialidad()
+					pw.println("      <centro>" + listaPacientes.get(i).getListaCitas().get(x).getCentro() + "</centro>");
+					pw.println("      <especialidad>" + listaPacientes.get(i).getListaCitas().get(x).getEspecialidad()
 							+ "</especialidad>");
-					pw.println("      <doctor>" + listaPacientes.get(i).getListaCitas().get(0).getDoctor() + "</doctor>");
-					pw.println("      <fecha>" + listaPacientes.get(i).getListaCitas().get(0).getFecha() + "</fecha>");
-					pw.println("      <hora>" + listaPacientes.get(i).getListaCitas().get(0).getHora() + "</hora>");
+					pw.println("      <doctor>" + listaPacientes.get(i).getListaCitas().get(x).getDoctor() + "</doctor>");
+					pw.println("      <fecha>" + listaPacientes.get(i).getListaCitas().get(x).getFecha() + "</fecha>");
+					pw.println("      <hora>" + listaPacientes.get(i).getListaCitas().get(x).getHora() + "</hora>");
 					pw.println("   </cita>");
-					if(x == listaPacientes.get(i).getListaCitas().size()) {
+					if(x == listaPacientes.get(i).getListaCitas().size()-1) {
 						pw.println("</citas>");
 					}		
 				}

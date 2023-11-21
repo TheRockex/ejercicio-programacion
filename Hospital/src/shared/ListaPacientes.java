@@ -1,28 +1,33 @@
 package shared;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.ArrayList;
 
+import clases.CitaMedica;
 import clases.Paciente;
 
 public class ListaPacientes {
 	ArrayList<Paciente> listaPacientes;
-	
+	public static final int CAPACIDAD = 12;
+
 	public ListaPacientes() {
 		listaPacientes = new ArrayList<Paciente>();
 	}
-	
-	public void add (Paciente p) {
-		listaPacientes.add(p);
+
+	public ListaPacientes(ArrayList<Paciente> listaPacientes) {
+		this.listaPacientes = listaPacientes;
 	}
-<<<<<<< Updated upstream
-=======
 
 	public ArrayList<Paciente> getListaPacientes() {
 		return listaPacientes;
-	}
-
-	public void setListaPacientes(ArrayList<Paciente> listaPacientes) {
-		this.listaPacientes = listaPacientes;
 	}
 
 	public synchronized void leer(File archivo) {
@@ -71,7 +76,6 @@ public class ListaPacientes {
 
 					if (p != null) {
 						listaPacientes.add(p);
-						notifyAll();
 					}
 
 					if (s[0].length() <= 9) {
@@ -108,7 +112,7 @@ public class ListaPacientes {
 			e.printStackTrace();
 		}
 
-		
+		notifyAll();
 	}
 
 	public synchronized void Crear() {
@@ -150,16 +154,8 @@ public class ListaPacientes {
 				file2.createNewFile();
 				fw = new FileWriter(file2);
 				pw = new PrintWriter(fw);
-				System.out.println("-----------------------");
 
 				for (int x = 0; x < listaPacientes.get(i).getListaCitas().size(); x++) {
-					
-					System.out.println("   <centro>" + listaPacientes.get(i).getListaCitas().get(i).getCentro() + "</centro>");
-					System.out.println("   <especialidad>" + listaPacientes.get(i).getListaCitas().get(i).getEspecialidad() + "</especialidad>\"");
-					System.out.println("   <doctor>" + listaPacientes.get(i).getListaCitas().get(i).getDoctor() + "</doctor>");
-					System.out.println("   <fecha>" + listaPacientes.get(i).getListaCitas().get(i).getFecha() + "</fecha>");
-					System.out.println("   <hora>" + listaPacientes.get(i).getListaCitas().get(i).getHora() + "</hora>");
-					
 					pw.println("<cita>");
 					pw.println("   <centro>" + listaPacientes.get(i).getListaCitas().get(i).getCentro() + "</centro>");
 					pw.println("   <especialidad>" + listaPacientes.get(i).getListaCitas().get(i).getEspecialidad() + "</especialidad>");
@@ -168,7 +164,6 @@ public class ListaPacientes {
 					pw.println("   <hora>" + listaPacientes.get(i).getListaCitas().get(i).getHora() + "</hora>");
 					pw.println("</cita>");
 				}
-				System.out.println("-----------------------");
 				pw.flush();
 				pw.close();
 			} catch (IOException e) {
@@ -177,6 +172,4 @@ public class ListaPacientes {
 		}
 
 	}
-
->>>>>>> Stashed changes
 }

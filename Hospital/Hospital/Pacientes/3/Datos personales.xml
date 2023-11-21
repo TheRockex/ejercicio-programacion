@@ -1,0 +1,10 @@
+<paciente>
+   <paciente id=3>
+      <nombre>Carlos</nombre>
+      <apellidos>
+         <apellido>Sánchez</apellido>
+         <apellido>Jiménez</apellido>
+      </apellidos>
+      <nacimiento>1982-03-12</nacimiento>
+      <localidad>Sevilla</localidad>
+</paciente>

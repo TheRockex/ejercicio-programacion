@@ -39,10 +39,6 @@ public class Main {
 			e.printStackTrace();
 		}
 
-		
-		
-
-
 		System.out.println("Hola");
 
 		System.out.println("Introduzca ID del paciente: ");
@@ -53,42 +49,19 @@ public class Main {
 		Document document;
 		File file;
 		XPath xPath;
-		NodeList nodeList;
-		int id = 1;
-		ArrayList<Paciente> personas = new ArrayList<Paciente>();
-		try {
-			db = dbf.newDocumentBuilder();
-			file = new File("Hospital/Pacientes/"+path+"/Citas.xml");
-			document = db.parse(file);
-			document.normalizeDocument();
-			xPath = XPathFactory.newInstance().newXPath();
-			path = "//cita";
-			nodeList = (NodeList) xPath.compile(path).evaluate(document, XPathConstants.NODESET);
-			System.out.println("Citas: ");
-			for(int i = 0; i < nodeList.getLength();i++) {
-				Element elemento = (Element) nodeList.item(i);
-				System.out.print("> "+elemento.getElementsByTagName("centro").item(0).getTextContent()); 
-				System.out.print(". "+elemento.getElementsByTagName("especialidad").item(0).getTextContent());
-				System.out.print(". "+elemento.getElementsByTagName("doctor").item(0).getTextContent());
-				System.out.print(". "+elemento.getElementsByTagName("fecha").item(0).getTextContent());
-				System.out.println(". "+elemento.getElementsByTagName("hora").item(0).getTextContent());
-			}
-			
-		} catch (Exception o) {
-			System.err.println("exception");
 		String path;
-
+		NodeList nodeList;
 		try {
 			db = dbf.newDocumentBuilder();
 			file = new File("Hospital/Pacientes/" + paciente + "/Datos personales.xml");
 			document = db.parse(file);
 			document.normalizeDocument();
 			xPath = XPathFactory.newInstance().newXPath();
-			path = "//pacientes";
+			path = "//paciente";
 			nodeList = (NodeList) xPath.compile(path).evaluate(document, XPathConstants.NODESET);
-
 			for (int i = 0; i < nodeList.getLength(); i++) {
 				Element elemento = (Element) nodeList.item(i);
+				System.out.println("ID: " + elemento.getAttribute("id"));
 				System.out.println("Nombre: " + elemento.getElementsByTagName("nombre").item(0).getTextContent());
 				System.out.println("Apellidos: " + elemento.getElementsByTagName("apellido").item(0).getTextContent()
 						+ " " + elemento.getElementsByTagName("apellido").item(1).getTextContent());
@@ -96,9 +69,26 @@ public class Main {
 						.println("Nacimiento: " + elemento.getElementsByTagName("nacimiento").item(0).getTextContent());
 				System.out.println("Localidad: " + elemento.getElementsByTagName("localidad").item(0).getTextContent());
 			}
-		} catch (Exception e) {
-			System.out.println("Excepcion");
+			db = dbf.newDocumentBuilder();
+			file = new File("Hospital/Pacientes/" + paciente + "/Citas.xml");
+			document = db.parse(file);
+			document.normalizeDocument();
+			xPath = XPathFactory.newInstance().newXPath();
+			path = "//cita";
+			nodeList = (NodeList) xPath.compile(path).evaluate(document, XPathConstants.NODESET);
+			System.out.println("Citas: ");
+			for (int i = 0; i < nodeList.getLength(); i++) {
+				Element elemento = (Element) nodeList.item(i);
+				System.out.print("> " + elemento.getElementsByTagName("centro").item(0).getTextContent());
+				System.out.print(". " + elemento.getElementsByTagName("especialidad").item(0).getTextContent());
+				System.out.print(". " + elemento.getElementsByTagName("doctor").item(0).getTextContent());
+				System.out.print(". " + elemento.getElementsByTagName("fecha").item(0).getTextContent());
+				System.out.println(". " + elemento.getElementsByTagName("hora").item(0).getTextContent());
+			}
+			
+		} catch (Exception o) {
+			System.err.println("exception");
+
 		}
 	}
-}
 }

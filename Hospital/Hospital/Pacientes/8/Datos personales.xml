@@ -1,0 +1,10 @@
+<paciente>
+   <paciente id=8>
+      <nombre>Laura</nombre>
+      <apellidos>
+         <apellido>Rodríguez</apellido>
+         <apellido>Martínez</apellido>
+      </apellidos>
+      <nacimiento>1987-06-21</nacimiento>
+      <localidad>Valencia</localidad>
+</paciente>

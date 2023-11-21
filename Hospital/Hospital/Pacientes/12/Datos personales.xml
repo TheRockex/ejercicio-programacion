@@ -1,0 +1,10 @@
+<paciente>
+   <paciente id=12>
+      <nombre>Carmen</nombre>
+      <apellidos>
+         <apellido>García</apellido>
+         <apellido>Fernández</apellido>
+      </apellidos>
+      <nacimiento>1973-01-01</nacimiento>
+      <localidad>Barcelona</localidad>
+</paciente>

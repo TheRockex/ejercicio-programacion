@@ -1,0 +1,10 @@
+<paciente>
+   <paciente id=7>
+      <nombre>Roberto</nombre>
+      <apellidos>
+         <apellido>Gómez</apellido>
+         <apellido>Rodríguez</apellido>
+      </apellidos>
+      <nacimiento>1975-02-04</nacimiento>
+      <localidad>Bilbao</localidad>
+</paciente>

@@ -118,12 +118,11 @@ public class ListaPacientes {
 	public synchronized void Crear() {
 
 		while (listaPacientes.isEmpty()) {
-			try {
-				wait();
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-
+				try {
+					wait();
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
 		}
 		FileWriter fw;
 		PrintWriter pw;
@@ -142,8 +141,8 @@ public class ListaPacientes {
 				pw.println("   <paciente id=" + listaPacientes.get(i).getId() + ">");
 				pw.println("      <nombre>" + listaPacientes.get(i).getNombre() + "</nombre>");
 				pw.println("      <apellidos>");
-				pw.println("         <apellido>" +listaPacientes.get(i).getApellidos()[0] + "</apellido>");
-				pw.println("         <apellido>" +listaPacientes.get(i).getApellidos()[1] + "</apellido>");
+				pw.println("         <apellido>" + listaPacientes.get(i).getApellidos()[0] + "</apellido>");
+				pw.println("         <apellido>" + listaPacientes.get(i).getApellidos()[1] + "</apellido>");
 				pw.println("      </apellidos>");
 				pw.println("      <nacimiento>" + listaPacientes.get(i).getNacimento() + "</nacimiento>");
 				pw.println("      <localidad>" + listaPacientes.get(i).getLocalidad() + "</localidad>");
@@ -157,11 +156,12 @@ public class ListaPacientes {
 
 				for (int x = 0; x < listaPacientes.get(i).getListaCitas().size(); x++) {
 					pw.println("<cita>");
-					pw.println("   <centro>" + listaPacientes.get(i).getListaCitas().get(i).getCentro() + "</centro>");
-					pw.println("   <especialidad>" + listaPacientes.get(i).getListaCitas().get(i).getEspecialidad() + "</especialidad>");
-					pw.println("   <doctor>" + listaPacientes.get(i).getListaCitas().get(i).getDoctor() + "</doctor>");
-					pw.println("   <fecha>" + listaPacientes.get(i).getListaCitas().get(i).getFecha() + "</fecha>");
-					pw.println("   <hora>" + listaPacientes.get(i).getListaCitas().get(i).getHora() + "</hora>");
+					pw.println("   <centro>" + listaPacientes.get(i).getListaCitas().get(0).getCentro() + "</centro>");
+					pw.println("   <especialidad>" + listaPacientes.get(i).getListaCitas().get(0).getEspecialidad()
+							+ "</especialidad>");
+					pw.println("   <doctor>" + listaPacientes.get(i).getListaCitas().get(0).getDoctor() + "</doctor>");
+					pw.println("   <fecha>" + listaPacientes.get(i).getListaCitas().get(0).getFecha() + "</fecha>");
+					pw.println("   <hora>" + listaPacientes.get(i).getListaCitas().get(0).getHora() + "</hora>");
 					pw.println("</cita>");
 				}
 				pw.flush();

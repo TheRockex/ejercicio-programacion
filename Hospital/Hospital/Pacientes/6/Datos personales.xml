@@ -1,0 +1,10 @@
+<paciente>
+   <paciente id=6>
+      <nombre>María</nombre>
+      <apellidos>
+         <apellido>Fernández</apellido>
+         <apellido>Santos</apellido>
+      </apellidos>
+      <nacimiento>1989-11-17</nacimiento>
+      <localidad>Madrid</localidad>
+</paciente>

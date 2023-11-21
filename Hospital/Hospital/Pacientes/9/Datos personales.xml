@@ -1,0 +1,10 @@
+<paciente>
+   <paciente id=9>
+      <nombre>Javier</nombre>
+      <apellidos>
+         <apellido>Gutiérrez</apellido>
+         <apellido>López</apellido>
+      </apellidos>
+      <nacimiento>1980-12-09</nacimiento>
+      <localidad>Sevilla</localidad>
+</paciente>

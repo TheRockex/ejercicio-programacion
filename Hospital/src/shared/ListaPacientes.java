@@ -128,9 +128,9 @@ public class ListaPacientes {
 		PrintWriter pw;
 
 		for (int i = 0; i < listaPacientes.size(); i++) {
-			File carpetaPacientesID = new File("Hospital/Pacientes/" + String.format("%09d", listaPacientes.get(i).getId()));
-			File file1 = new File("Hospital/Pacientes/" + String.format("%09d", listaPacientes.get(i).getId())  + "/Datos personales.xml");
-			File file2 = new File("Hospital/Pacientes/" + String.format("%09d", listaPacientes.get(i).getId()) + "/Citas.xml");
+			File carpetaPacientesID = new File("Pacientes/" + String.format("%09d", listaPacientes.get(i).getId()));
+			File file1 = new File("Pacientes/" + String.format("%09d", listaPacientes.get(i).getId())  + "/Datos personales.xml");
+			File file2 = new File("Pacientes/" + String.format("%09d", listaPacientes.get(i).getId()) + "/Citas.xml");
 			try {
 				carpetaPacientesID.mkdir();
 				file1.createNewFile();

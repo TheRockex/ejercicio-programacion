@@ -1,10 +1,13 @@
-<paciente>
-   <paciente id=10>
-      <nombre>Marta</nombre>
-      <apellidos>
-         <apellido>Hernández</apellido>
-         <apellido>Gómez</apellido>
-      </apellidos>
-      <nacimiento>1995-05-14</nacimiento>
-      <localidad>Barcelona</localidad>
-</paciente>
+<?xml version="1.0" encoding="UTF-8"?>
+<pacientes>
+   <paciente>
+      <paciente id=10>
+         <nombre>Marta</nombre>
+         <apellidos>
+            <apellido>Hernández</apellido>
+            <apellido>Gómez</apellido>
+         </apellidos>
+         <nacimiento>1995-05-14</nacimiento>
+         <localidad>Barcelona</localidad>
+   </paciente>
+</pacientes>

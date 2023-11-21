@@ -1,14 +1,16 @@
-<cita>
-   <centro>Clínica San Pablo</centro>
-   <especialidad>Ginecología</especialidad>
-   <doctor>Dr. Javier Sánchez Mendoza</doctor>
-   <fecha>2023-09-10</fecha>
-   <hora>14:30</hora>
-</cita>
-<cita>
-   <centro>Clínica San Pablo</centro>
-   <especialidad>Ginecología</especialidad>
-   <doctor>Dr. Javier Sánchez Mendoza</doctor>
-   <fecha>2023-09-10</fecha>
-   <hora>14:30</hora>
-</cita>
+<?xml version="1.0" encoding="UTF-8"?>
+<citas>
+   <cita>
+      <centro>Clínica San Pablo</centro>
+      <especialidad>Ginecología</especialidad>
+      <doctor>Dr. Javier Sánchez Mendoza</doctor>
+      <fecha>2023-09-10</fecha>
+      <hora>14:30</hora>
+   </cita>
+   <cita>
+      <centro>Clínica San Pablo</centro>
+      <especialidad>Ginecología</especialidad>
+      <doctor>Dr. Javier Sánchez Mendoza</doctor>
+      <fecha>2023-09-10</fecha>
+      <hora>14:30</hora>
+   </cita>

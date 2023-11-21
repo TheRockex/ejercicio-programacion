@@ -1,14 +1,16 @@
-<cita>
-   <centro>Clínica Santa María</centro>
-   <especialidad>Oftalmología</especialidad>
-   <doctor>Dr. Antonio Rodríguez López</doctor>
-   <fecha>2023-11-02</fecha>
-   <hora>14:15</hora>
-</cita>
-<cita>
-   <centro>Clínica Santa María</centro>
-   <especialidad>Oftalmología</especialidad>
-   <doctor>Dr. Antonio Rodríguez López</doctor>
-   <fecha>2023-11-02</fecha>
-   <hora>14:15</hora>
-</cita>
+<?xml version="1.0" encoding="UTF-8"?>
+<citas>
+   <cita>
+      <centro>Clínica Santa María</centro>
+      <especialidad>Oftalmología</especialidad>
+      <doctor>Dr. Antonio Rodríguez López</doctor>
+      <fecha>2023-11-02</fecha>
+      <hora>14:15</hora>
+   </cita>
+   <cita>
+      <centro>Clínica Santa María</centro>
+      <especialidad>Oftalmología</especialidad>
+      <doctor>Dr. Antonio Rodríguez López</doctor>
+      <fecha>2023-11-02</fecha>
+      <hora>14:15</hora>
+   </cita>

@@ -1,14 +1,16 @@
-<cita>
-   <centro>Hospital VeraCruz</centro>
-   <especialidad>Dermatología</especialidad>
-   <doctor>Dra. María Lozano Robles</doctor>
-   <fecha>2023-05-15</fecha>
-   <hora>08:45</hora>
-</cita>
-<cita>
-   <centro>Hospital VeraCruz</centro>
-   <especialidad>Dermatología</especialidad>
-   <doctor>Dra. María Lozano Robles</doctor>
-   <fecha>2023-05-15</fecha>
-   <hora>08:45</hora>
-</cita>
+<?xml version="1.0" encoding="UTF-8"?>
+<citas>
+   <cita>
+      <centro>Hospital VeraCruz</centro>
+      <especialidad>Dermatología</especialidad>
+      <doctor>Dra. María Lozano Robles</doctor>
+      <fecha>2023-05-15</fecha>
+      <hora>08:45</hora>
+   </cita>
+   <cita>
+      <centro>Hospital VeraCruz</centro>
+      <especialidad>Dermatología</especialidad>
+      <doctor>Dra. María Lozano Robles</doctor>
+      <fecha>2023-05-15</fecha>
+      <hora>08:45</hora>
+   </cita>

@@ -1,10 +1,13 @@
-<paciente>
-   <paciente id=5>
-      <nombre>David</nombre>
-      <apellidos>
-         <apellido>Martínez</apellido>
-         <apellido>Ruiz</apellido>
-      </apellidos>
-      <nacimiento>1978-09-08</nacimiento>
-      <localidad>Barcelona</localidad>
-</paciente>
+<?xml version="1.0" encoding="UTF-8"?>
+<pacientes>
+   <paciente>
+      <paciente id=5>
+         <nombre>David</nombre>
+         <apellidos>
+            <apellido>Martínez</apellido>
+            <apellido>Ruiz</apellido>
+         </apellidos>
+         <nacimiento>1978-09-08</nacimiento>
+         <localidad>Barcelona</localidad>
+   </paciente>
+</pacientes>

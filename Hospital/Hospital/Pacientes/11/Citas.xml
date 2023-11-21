@@ -1,14 +1,16 @@
-<cita>
-   <centro>Clínica Dental Sonrisas</centro>
-   <especialidad>Odontología</especialidad>
-   <doctor>Dr. Carmen Molina Ruiz</doctor>
-   <fecha>2023-06-14</fecha>
-   <hora>13:45</hora>
-</cita>
-<cita>
-   <centro>Clínica Dental Sonrisas</centro>
-   <especialidad>Odontología</especialidad>
-   <doctor>Dr. Carmen Molina Ruiz</doctor>
-   <fecha>2023-06-14</fecha>
-   <hora>13:45</hora>
-</cita>
+<?xml version="1.0" encoding="UTF-8"?>
+<citas>
+   <cita>
+      <centro>Clínica Dental Sonrisas</centro>
+      <especialidad>Odontología</especialidad>
+      <doctor>Dr. Carmen Molina Ruiz</doctor>
+      <fecha>2023-06-14</fecha>
+      <hora>13:45</hora>
+   </cita>
+   <cita>
+      <centro>Clínica Dental Sonrisas</centro>
+      <especialidad>Odontología</especialidad>
+      <doctor>Dr. Carmen Molina Ruiz</doctor>
+      <fecha>2023-06-14</fecha>
+      <hora>13:45</hora>
+   </cita>

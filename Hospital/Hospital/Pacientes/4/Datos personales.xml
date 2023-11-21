@@ -1,10 +1,13 @@
-<paciente>
-   <paciente id=4>
-      <nombre>Ana</nombre>
-      <apellidos>
-         <apellido>López</apellido>
-         <apellido>Pérez</apellido>
-      </apellidos>
-      <nacimiento>1990-06-25</nacimiento>
-      <localidad>Valencia</localidad>
-</paciente>
+<?xml version="1.0" encoding="UTF-8"?>
+<pacientes>
+   <paciente>
+      <paciente id=4>
+         <nombre>Ana</nombre>
+         <apellidos>
+            <apellido>López</apellido>
+            <apellido>Pérez</apellido>
+         </apellidos>
+         <nacimiento>1990-06-25</nacimiento>
+         <localidad>Valencia</localidad>
+   </paciente>
+</pacientes>

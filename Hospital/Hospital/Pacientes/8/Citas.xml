@@ -1,14 +1,16 @@
-<cita>
-   <centro>Clínica San Francisco</centro>
-   <especialidad>Psicología</especialidad>
-   <doctor>Lic. Adrián Pérez Silva</doctor>
-   <fecha>2023-06-17</fecha>
-   <hora>16:45</hora>
-</cita>
-<cita>
-   <centro>Clínica San Francisco</centro>
-   <especialidad>Psicología</especialidad>
-   <doctor>Lic. Adrián Pérez Silva</doctor>
-   <fecha>2023-06-17</fecha>
-   <hora>16:45</hora>
-</cita>
+<?xml version="1.0" encoding="UTF-8"?>
+<citas>
+   <cita>
+      <centro>Clínica San Francisco</centro>
+      <especialidad>Psicología</especialidad>
+      <doctor>Lic. Adrián Pérez Silva</doctor>
+      <fecha>2023-06-17</fecha>
+      <hora>16:45</hora>
+   </cita>
+   <cita>
+      <centro>Clínica San Francisco</centro>
+      <especialidad>Psicología</especialidad>
+      <doctor>Lic. Adrián Pérez Silva</doctor>
+      <fecha>2023-06-17</fecha>
+      <hora>16:45</hora>
+   </cita>

@@ -137,16 +137,19 @@ public class ListaPacientes {
 				file1.createNewFile();
 				fw = new FileWriter(file1);
 				pw = new PrintWriter(fw);
-				pw.println("<paciente>");
-				pw.println("   <paciente id=" + listaPacientes.get(i).getId() + ">");
-				pw.println("      <nombre>" + listaPacientes.get(i).getNombre() + "</nombre>");
-				pw.println("      <apellidos>");
-				pw.println("         <apellido>" + listaPacientes.get(i).getApellidos()[0] + "</apellido>");
-				pw.println("         <apellido>" + listaPacientes.get(i).getApellidos()[1] + "</apellido>");
-				pw.println("      </apellidos>");
-				pw.println("      <nacimiento>" + listaPacientes.get(i).getNacimento() + "</nacimiento>");
-				pw.println("      <localidad>" + listaPacientes.get(i).getLocalidad() + "</localidad>");
-				pw.println("</paciente>");
+				pw.println("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
+				pw.println("<pacientes>");
+				pw.println("   <paciente>");
+				pw.println("      <paciente id=" + listaPacientes.get(i).getId() + ">");
+				pw.println("         <nombre>" + listaPacientes.get(i).getNombre() + "</nombre>");
+				pw.println("         <apellidos>");
+				pw.println("            <apellido>" + listaPacientes.get(i).getApellidos()[0] + "</apellido>");
+				pw.println("            <apellido>" + listaPacientes.get(i).getApellidos()[1] + "</apellido>");
+				pw.println("         </apellidos>");
+				pw.println("         <nacimiento>" + listaPacientes.get(i).getNacimento() + "</nacimiento>");
+				pw.println("         <localidad>" + listaPacientes.get(i).getLocalidad() + "</localidad>");
+				pw.println("   </paciente>");
+				pw.println("</pacientes>");
 				pw.flush();
 				pw.close();
 
@@ -155,14 +158,22 @@ public class ListaPacientes {
 				pw = new PrintWriter(fw);
 
 				for (int x = 0; x < listaPacientes.get(i).getListaCitas().size(); x++) {
-					pw.println("<cita>");
-					pw.println("   <centro>" + listaPacientes.get(i).getListaCitas().get(0).getCentro() + "</centro>");
-					pw.println("   <especialidad>" + listaPacientes.get(i).getListaCitas().get(0).getEspecialidad()
+					if(x == 0) {
+						pw.println("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
+						pw.println("<citas>");
+					}
+					pw.println("   <cita>");
+					pw.println("      <centro>" + listaPacientes.get(i).getListaCitas().get(0).getCentro() + "</centro>");
+					pw.println("      <especialidad>" + listaPacientes.get(i).getListaCitas().get(0).getEspecialidad()
 							+ "</especialidad>");
-					pw.println("   <doctor>" + listaPacientes.get(i).getListaCitas().get(0).getDoctor() + "</doctor>");
-					pw.println("   <fecha>" + listaPacientes.get(i).getListaCitas().get(0).getFecha() + "</fecha>");
-					pw.println("   <hora>" + listaPacientes.get(i).getListaCitas().get(0).getHora() + "</hora>");
-					pw.println("</cita>");
+					pw.println("      <doctor>" + listaPacientes.get(i).getListaCitas().get(0).getDoctor() + "</doctor>");
+					pw.println("      <fecha>" + listaPacientes.get(i).getListaCitas().get(0).getFecha() + "</fecha>");
+					pw.println("      <hora>" + listaPacientes.get(i).getListaCitas().get(0).getHora() + "</hora>");
+					pw.println("   </cita>");
+					if(x == listaPacientes.get(i).getListaCitas().size()) {
+						pw.println("</citas>");
+					}
+					
 				}
 				pw.flush();
 				pw.close();

@@ -1,14 +1,16 @@
-<cita>
-   <centro>Hospital Central</centro>
-   <especialidad>Cardiología</especialidad>
-   <doctor>Dr. Laura González Herrera</doctor>
-   <fecha>2023-08-05</fecha>
-   <hora>10:00</hora>
-</cita>
-<cita>
-   <centro>Hospital Central</centro>
-   <especialidad>Cardiología</especialidad>
-   <doctor>Dr. Laura González Herrera</doctor>
-   <fecha>2023-08-05</fecha>
-   <hora>10:00</hora>
-</cita>
+<?xml version="1.0" encoding="UTF-8"?>
+<citas>
+   <cita>
+      <centro>Hospital Central</centro>
+      <especialidad>Cardiología</especialidad>
+      <doctor>Dr. Laura González Herrera</doctor>
+      <fecha>2023-08-05</fecha>
+      <hora>10:00</hora>
+   </cita>
+   <cita>
+      <centro>Hospital Central</centro>
+      <especialidad>Cardiología</especialidad>
+      <doctor>Dr. Laura González Herrera</doctor>
+      <fecha>2023-08-05</fecha>
+      <hora>10:00</hora>
+   </cita>

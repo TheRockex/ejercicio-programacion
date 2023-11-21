@@ -1,10 +1,13 @@
-<paciente>
-   <paciente id=2>
-      <nombre>Elena</nombre>
-      <apellidos>
-         <apellido>García</apellido>
-         <apellido>Martínez</apellido>
-      </apellidos>
-      <nacimiento>1985-07-03</nacimiento>
-      <localidad>Barcelona</localidad>
-</paciente>
+<?xml version="1.0" encoding="UTF-8"?>
+<pacientes>
+   <paciente>
+      <paciente id=2>
+         <nombre>Elena</nombre>
+         <apellidos>
+            <apellido>García</apellido>
+            <apellido>Martínez</apellido>
+         </apellidos>
+         <nacimiento>1985-07-03</nacimiento>
+         <localidad>Barcelona</localidad>
+   </paciente>
+</pacientes>

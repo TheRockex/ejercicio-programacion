@@ -1,10 +1,13 @@
-<paciente>
-   <paciente id=7>
-      <nombre>Roberto</nombre>
-      <apellidos>
-         <apellido>Gómez</apellido>
-         <apellido>Rodríguez</apellido>
-      </apellidos>
-      <nacimiento>1975-02-04</nacimiento>
-      <localidad>Bilbao</localidad>
-</paciente>
+<?xml version="1.0" encoding="UTF-8"?>
+<pacientes>
+   <paciente>
+      <paciente id=7>
+         <nombre>Roberto</nombre>
+         <apellidos>
+            <apellido>Gómez</apellido>
+            <apellido>Rodríguez</apellido>
+         </apellidos>
+         <nacimiento>1975-02-04</nacimiento>
+         <localidad>Bilbao</localidad>
+   </paciente>
+</pacientes>

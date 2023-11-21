@@ -1,10 +1,13 @@
-<paciente>
-   <paciente id=1>
-      <nombre>Alvaro</nombre>
-      <apellidos>
-         <apellido>Ruiz</apellido>
-         <apellido>Moreno</apellido>
-      </apellidos>
-      <nacimiento>1970-01-20</nacimiento>
-      <localidad>Madrid</localidad>
-</paciente>
+<?xml version="1.0" encoding="UTF-8"?>
+<pacientes>
+   <paciente>
+      <paciente id=1>
+         <nombre>Alvaro</nombre>
+         <apellidos>
+            <apellido>Ruiz</apellido>
+            <apellido>Moreno</apellido>
+         </apellidos>
+         <nacimiento>1970-01-20</nacimiento>
+         <localidad>Madrid</localidad>
+   </paciente>
+</pacientes>

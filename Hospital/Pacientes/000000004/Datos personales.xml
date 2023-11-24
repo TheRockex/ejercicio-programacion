@@ -6,7 +6,7 @@
             <apellido>López</apellido>
             <apellido>Pérez</apellido>
          </apellidos>
-         <nacimiento>1990-06-25</nacimiento>
+         <nacimiento>25/06/1990</nacimiento>
          <localidad>Valencia</localidad>
       </paciente>
 </pacientes>

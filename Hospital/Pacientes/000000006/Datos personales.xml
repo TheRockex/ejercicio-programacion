@@ -6,7 +6,7 @@
             <apellido>Fernández</apellido>
             <apellido>Santos</apellido>
          </apellidos>
-         <nacimiento>1989-11-17</nacimiento>
+         <nacimiento>17/11/1989</nacimiento>
          <localidad>Madrid</localidad>
       </paciente>
 </pacientes>

@@ -6,7 +6,7 @@
             <apellido>García</apellido>
             <apellido>Fernández</apellido>
          </apellidos>
-         <nacimiento>1973-01-01</nacimiento>
+         <nacimiento>01/01/1973</nacimiento>
          <localidad>Barcelona</localidad>
       </paciente>
 </pacientes>

@@ -6,7 +6,7 @@
             <apellido>Gutiérrez</apellido>
             <apellido>López</apellido>
          </apellidos>
-         <nacimiento>1980-12-09</nacimiento>
+         <nacimiento>09/12/1980</nacimiento>
          <localidad>Sevilla</localidad>
       </paciente>
 </pacientes>

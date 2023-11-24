@@ -4,14 +4,14 @@
       <centro>Hospital San Martín</centro>
       <especialidad>Ortopedia</especialidad>
       <doctor>Dr. Juan Morales Castro</doctor>
-      <fecha>2023-03-22</fecha>
+      <fecha>22/3/2023</fecha>
       <hora>15:30</hora>
    </cita>
    <cita>
       <centro>Hospital San Martín</centro>
       <especialidad>Ortopedia</especialidad>
       <doctor>Dr. Juan Morales Castro</doctor>
-      <fecha>2023-04-06</fecha>
+      <fecha>6/4/2023</fecha>
       <hora>16:45</hora>
    </cita>
 </citas>

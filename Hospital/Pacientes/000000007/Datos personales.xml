@@ -6,7 +6,7 @@
             <apellido>Gómez</apellido>
             <apellido>Rodríguez</apellido>
          </apellidos>
-         <nacimiento>1975-02-04</nacimiento>
+         <nacimiento>04/02/1975</nacimiento>
          <localidad>Bilbao</localidad>
       </paciente>
 </pacientes>

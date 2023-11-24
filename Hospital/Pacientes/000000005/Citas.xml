@@ -4,14 +4,14 @@
       <centro>Hospital Santander</centro>
       <especialidad>Neurología</especialidad>
       <doctor>Dra. Isabel Fernández García</doctor>
-      <fecha>2023-04-12</fecha>
+      <fecha>12/4/2023</fecha>
       <hora>09:30</hora>
    </cita>
    <cita>
       <centro>Hospital Santander</centro>
       <especialidad>Neurología</especialidad>
       <doctor>Dra. Isabel Fernández García</doctor>
-      <fecha>2023-04-28</fecha>
+      <fecha>28/4/2023</fecha>
       <hora>10:45</hora>
    </cita>
 </citas>

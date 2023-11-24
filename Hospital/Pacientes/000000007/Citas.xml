@@ -4,14 +4,14 @@
       <centro>Hospital Universitario</centro>
       <especialidad>Endocrinología</especialidad>
       <doctor>Dra. Marta Díaz Vargas</doctor>
-      <fecha>2023-09-30</fecha>
+      <fecha>30/9/2023</fecha>
       <hora>11:00</hora>
    </cita>
    <cita>
       <centro>Hospital Universitario</centro>
       <especialidad>Endocrinología</especialidad>
       <doctor>Dra. Marta Díaz Vargas</doctor>
-      <fecha>2023-10-15</fecha>
+      <fecha>15/10/2023</fecha>
       <hora>12:15</hora>
    </cita>
 </citas>

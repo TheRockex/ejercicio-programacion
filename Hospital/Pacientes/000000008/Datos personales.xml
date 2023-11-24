@@ -6,7 +6,7 @@
             <apellido>Rodríguez</apellido>
             <apellido>Martínez</apellido>
          </apellidos>
-         <nacimiento>1987-06-21</nacimiento>
+         <nacimiento>21/06/1987</nacimiento>
          <localidad>Valencia</localidad>
       </paciente>
 </pacientes>

@@ -27,7 +27,6 @@ public class ListaPacientes {
 
 	public synchronized void add(Paciente p) {
 		listaPacientes.add(p);
-		System.out.println("LEIDO");
 		notifyAll();
 	}
 
@@ -46,9 +45,9 @@ public class ListaPacientes {
 
 		Paciente p = listaPacientes.remove(0);
 
-		File carpetaPacientesID = new File("Hospital/Pacientes/" + String.format("%09d", p.getId()));
-		File file1 = new File("Hospital/Pacientes/" + String.format("%09d", p.getId()) + "/Datos personales.xml");
-		File file2 = new File("Hospital/Pacientes/" + String.format("%09d", p.getId()) + "/Citas.xml");
+		File carpetaPacientesID = new File("Pacientes/" + String.format("%09d", p.getId()));
+		File file1 = new File("Pacientes/" + String.format("%09d", p.getId()) + "/Datos personales.xml");
+		File file2 = new File("Pacientes/" + String.format("%09d", p.getId()) + "/Citas.xml");
 		try {
 			carpetaPacientesID.mkdir();
 			file1.createNewFile();
@@ -62,7 +61,11 @@ public class ListaPacientes {
 			pw.println("            <apellido>" + p.getApellidos()[0] + "</apellido>");
 			pw.println("            <apellido>" + p.getApellidos()[1] + "</apellido>");
 			pw.println("         </apellidos>");
-			pw.println("         <nacimiento>" + p.getNacimento() + "</nacimiento>");
+			pw.print("         <nacimiento>");
+			pw.print(String.format("%02d/", p.getNacimento().getDayOfMonth()));
+			pw.print(String.format("%02d/", p.getNacimento().getMonthValue()));
+			pw.print(String.format("%04d", p.getNacimento().getYear()));
+			pw.println("</nacimiento>");
 			pw.println("         <localidad>" + p.getLocalidad() + "</localidad>");
 			pw.println("      </paciente>");
 			pw.println("</pacientes>");
@@ -82,7 +85,9 @@ public class ListaPacientes {
 				pw.println("      <centro>" + p.getListaCitas().get(x).getCentro() + "</centro>");
 				pw.println("      <especialidad>" + p.getListaCitas().get(x).getEspecialidad() + "</especialidad>");
 				pw.println("      <doctor>" + p.getListaCitas().get(x).getDoctor() + "</doctor>");
-				pw.println("      <fecha>" + p.getListaCitas().get(x).getFecha() + "</fecha>");
+				pw.println("      <fecha>" + p.getListaCitas().get(x).getFecha().getDayOfMonth() + "/"
+						+ p.getListaCitas().get(x).getFecha().getMonthValue() + "/"
+						+ p.getListaCitas().get(x).getFecha().getYear() + "</fecha>");
 				pw.println("      <hora>" + p.getListaCitas().get(x).getHora() + "</hora>");
 				pw.println("   </cita>");
 				if (x == p.getListaCitas().size() - 1) {
@@ -91,8 +96,7 @@ public class ListaPacientes {
 			}
 			pw.flush();
 			pw.close();
-			
-			System.out.println("CREADO");
+
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -106,9 +110,8 @@ public class ListaPacientes {
 		return finished;
 	}
 
-	public synchronized void setFinished(boolean finished) {
+	public void setFinished(boolean finished) {
 		this.finished = finished;
-		notifyAll();
 	}
 
 	public boolean isEmpty() {

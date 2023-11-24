@@ -1,6 +1,5 @@
 package hilos;
 
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -15,20 +14,19 @@ import shared.ListaPacientes;
 
 public class HiloLectura extends Thread {
 	private ListaPacientes listaPacientes;
-	private File archivo;
+	private File txt;
 
-	public HiloLectura(ListaPacientes listaPacientes, File archivo) {
+	public HiloLectura(ListaPacientes listaPacientes, File txt) {
 		this.listaPacientes = listaPacientes;
-		this.archivo = archivo;
+		this.txt = txt;
 	}
-	
-	
-	
+
 	public void run() {
+		FileReader fr;
+		BufferedReader br;
+
 		try {
-			FileReader fr;
-			BufferedReader br;
-			fr = new FileReader(archivo);
+			fr = new FileReader(txt);
 			br = new BufferedReader(fr);
 			String linea;
 			Paciente p = null;
@@ -70,12 +68,12 @@ public class HiloLectura extends Thread {
 											.of(Integer.parseInt(d[2]), Integer.parseInt(d[1]), Integer.parseInt(d[0])),
 									s[5]);
 						} catch (Exception e) {
-							System.err.println("ERROR. No se pudo crear el paciente de la linea " + i + ".");
+							System.err.println("No se pudo crear el paciente de la linea " + i + ".");
 							p = null;
 						}
 					} else {
 						System.err.println(
-								"Error al crear el paciente. id supera los digitos permitidos (9) en linea " + i + ".");
+								"No se pudo crear el paciente de la linea "+i+": El id supera los (9) digitos permitidos.");
 						p = null;
 					}
 
@@ -88,7 +86,7 @@ public class HiloLectura extends Thread {
 			if (p != null) {
 				listaPacientes.add(p);
 			}
-			
+
 			listaPacientes.setFinished(true);
 
 		} catch (FileNotFoundException e) {
@@ -97,5 +95,5 @@ public class HiloLectura extends Thread {
 			e.printStackTrace();
 		}
 	}
-	
+
 }

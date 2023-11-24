@@ -6,7 +6,7 @@
             <apellido>García</apellido>
             <apellido>Martínez</apellido>
          </apellidos>
-         <nacimiento>1985-07-03</nacimiento>
+         <nacimiento>03/07/1985</nacimiento>
          <localidad>Barcelona</localidad>
       </paciente>
 </pacientes>

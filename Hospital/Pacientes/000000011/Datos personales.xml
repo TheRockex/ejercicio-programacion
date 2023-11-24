@@ -6,7 +6,7 @@
             <apellido>Fuentes</apellido>
             <apellido>Sánchez</apellido>
          </apellidos>
-         <nacimiento>1984-08-28</nacimiento>
+         <nacimiento>28/08/1984</nacimiento>
          <localidad>Madrid</localidad>
       </paciente>
 </pacientes>
